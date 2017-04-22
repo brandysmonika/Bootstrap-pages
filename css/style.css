@@ -1,0 +1,10 @@
+/* FONTY GOOGLE
+    font-family: 'Droid Serif', serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Roboto Slab', serif;*/
+.navbar-header .navbar-brand {
+   font-family: 'Droid Serif', serif;
+   font-size: 1.6em;
+}
