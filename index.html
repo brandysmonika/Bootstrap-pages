@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <title>Bootstrap</title>
     <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Montserrat|Roboto+Slab" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Montserrat|Roboto+Slab" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Główne style -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Rensposywne Style -->
+    <link rel="stylesheet" href="css/rensposive.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<!-- Menu nawigacyjne -->
+    <!-- Menu nawigacyjne -->
 
-    <nav class="navbar navbar-default"> <!--'navbar-fixed-top'-->
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top">
+        <!--'navbar-fixed-top'-->
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -27,17 +32,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Bootstrap Project</a>
+                <div class="navbar-brand">Bootstrap Project</div>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="menu-glowne">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul class="nav navbar-nav navbar-right text-right">
+                    <li class="menu-item"><a href="#services">Services</a></li>
+                    <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-item"><a href="#about">About</a></li>
+                    <li class="menu-item"><a href="#">Team</a></li>
+                    <li class="menu-item"><a href="#">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -45,17 +50,241 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <!--Main header Obrazek -->
+
+    <div id="main-header">
+        <div class="container">
+            <div class="header-caption">
+                <h2>Num liere conta, sum berte col</h2>
+                <h1>Lorem Ipsum Dolor</h1>
+                <a class="btn btn-info btn-lg btn-blue" href="#services">Viev more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Services -->
+
+    <section id="services" class="text-center">
+        <div class="container">
+            <div class="row">
+                <h2>Services</h2>
+                <h1>Lorem ipsum dolor sit amet</h1>
+            </div>
+            <div class="row col">
+                <div class="col-sm-4 col-xs-12">
+                    <span class="fa-stack fa-3x">
+          <i class="fa fa-circle fa-stack-2x fas"></i>
+          <i class="fa fa-briefcase fa-stack-1x fa-inverse fas"></i>
+              </span>
+                    <h3>Web Developer</h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, doloribus explicabo alias eius totam esse odit similique molestias ab, voluptas suscipit sint nostrum nihil illum ipsum ullam libero eaque maiores.</p>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <span class="fa-stack fa-3x">
+              <i class="fa fa-circle fa-stack-2x fas"></i>
+              <i class="fa fa-cloud-download fa-stack-1x fa-inverse fas"></i>
+            </span>
+                    <h3>E-commerce</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, doloribus explicabo alias eius totam esse odit similique molestias ab, voluptas suscipit sint nostrum nihil illum ipsum ullam libero eaque maiores.</p>
+                </div>
+                <div class="col-sm-4 col-xs-12">
+                    <span class="fa-stack fa-3x">
+              <i class="fa fa-circle fa-stack-2x fas"></i>
+              <i class="fa fa-comment-o fa-stack-1x fa-inverse fas"></i>
+            </span>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, doloribus explicabo alias eius totam esse odit similique molestias ab, voluptas suscipit sint nostrum nihil illum ipsum ullam libero eaque maiores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Portfolio -->
+   
+<!--sekcja portfolio start-->
+<section id="portfolio" class="text-center">
+	<div class="container">
+		<div class="row">
+			<h1>Portfolio</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-4 col-xs-12">
+				<div class="outer">
+					<div class="inner">
+						<div class="img-container">
+							<div id="portfolio-item-1" class="hov">
+								<div class="portfolio-mask">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div> 
+						</div>
+					</div>
+				<div class="text-nag">
+				    <h3 class="text-center">Lorem ipsum dolor</h3>
+					<p class="text-center">Lorem ipsum dolor dolor dolor</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-lg-4 col-xs-12">
+				<div class="outer">
+					<div class="inner">
+						<div class="img-container">
+							<div id="portfolio-item-2" class="hov">
+								<div class="portfolio-mask">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="text-nag">
+				    <h3 class="text-center">Lorem ipsum dolor</h3>
+					<p class="text-center">Lorem ipsum dolor dolor dolor</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-lg-4 col-xs-12">
+				<div class="outer">
+					<div class="inner">
+						<div class="img-container">
+							<div id="portfolio-item-3" class="hov">
+								<div class="portfolio-mask">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="text-nag">
+				    <h3 class="text-center">Lorem ipsum dolor</h3>
+					<p class="text-center">Lorem ipsum dolor dolor dolor</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-lg-4 col-xs-12">
+				<div class="outer">
+					<div class="inner">
+						<div class="img-container">
+							<div id="portfolio-item-4" class="hov">
+								<div class="portfolio-mask">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="text-nag">
+				    <h3 class="text-center">Lorem ipsum dolor</h3>
+					<p class="text-center">Lorem ipsum dolor dolor dolor</p>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col-lg-4 col-xs-12">
+				<div class="outer">
+					<div class="inner">
+						<div class="img-container">
+							<div id="portfolio-item-5" class="hov">
+								<div class="portfolio-mask">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div> 
+						</div>
+					</div>
+					<div class="text-nag">
+				    <h3 class="text-center">Lorem ipsum dolor</h3>
+					<p class="text-center">tLorem ipsum dolor dolor dolor</p>
+					</div>
+					
+				</div>
+			</div>
+	
+			<div class="col-lg-4 col-xs-12">
+				<div class="outer">
+					<div class="inner">
+						<div class="img-container">
+							<div id="portfolio-item-6" class="hov">
+								<div class="portfolio-mask">
+									<i class="fa fa-plus" aria-hidden="true"></i>
+								</div>
+							</div> 
+						</div>
+					</div>
+				<div class="text-nag">
+				    <h3 class="text-center">Lorem ipsum dolor</h3>
+					<p class="text-center">Lorem ipsum dolor dolor dolor</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Sekcja o Nas -->		
+	
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <p class="text-center about-text1">About Us</h3>
+                <p class="text-center about-text">Lorem ipsum dolor dolor dolor</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-xs-12">
+                <div class="face text-center">
+                    <img src="img/team/man-1.jpg" alt="..." class="img-circle">
+                </div>
+                <div class="text-about text-center">John Carter</div>
+                <div class="text-about1 text-center">Developer</div>
+                <div class="icons text-center">
+                <a href=""><i class="fa fa-facebook-official fa-3x"></i></a>
+                <a href=""><i class="fa fa-twitter-square fa-3x"></i></a>
+                <a href=""><i class="fa fa-linkedin-square fa-3x"></i></a>
+                </div> 
+                </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="face text-center">
+                    <img src="img/team/man-2.jpg" alt="..." class="img-circle">
+                </div>
+                <div class="text-about text-center">Mark Johnson</div>
+                <div class="text-about1 text-center">Developer</div>
+                <div class="icons text-center">
+                <a href=""><i class="fa fa-facebook-official fa-3x"></i></a>
+                <a href=""><i class="fa fa-twitter-square fa-3x"></i></a>
+                <a href=""><i class="fa fa-linkedin-square fa-3x"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xs-12">
+                <div class="face text-center">
+                    <img src="img/team/woman-1.jpg" alt="..." class="img-circle">
+                </div>
+                <div class="text-about text-center">Kate Hudson</div>
+                <div class="text-about1 text-center">Developer</div>
+                <div class="icons text-center">
+                <a href=""><i class="fa fa-facebook-official fa-3x"></i></a>
+                <a href=""><i class="fa fa-twitter-square fa-3x"></i></a>
+                <a href=""><i class="fa fa-linkedin-square fa-3x"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		
+		
+		
+	
 
 
 
-<!--Skrypty JS-->
-<!-- jQuery plugins -->
-<script src="js/jquery-3.2.0.min.js"></script>
+    <!--Skrypty JS-->
+    <!-- jQuery plugins -->
+    <script src="js/jquery-3.2.0.min.js"></script>
 
-<!-- Bootstrap JS -->
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<!-- Głowny JS -->
-<scirpt src="js/main.js"></scirpt>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- Głowny JS -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

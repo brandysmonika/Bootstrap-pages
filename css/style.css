@@ -4,7 +4,317 @@
     font-family: 'Montserrat', sans-serif;
 
     font-family: 'Roboto Slab', serif;*/
-.navbar-header .navbar-brand {
-   font-family: 'Droid Serif', serif;
-   font-size: 1.6em;
+
+body {
+    width: 100%;
+    height: 100%;
 }
+
+/* Button */
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Przycisk do viev more*/
+.btn-blue{
+ background-color: #0ed8d6;    
+}
+
+/* Menu nawigacyjne */
+
+.navbar {
+    background-color: transparent;
+    border: 0;
+}
+
+.navbar-header .navbar-brand {
+    font-family: 'Droid Serif', serif;
+    font-size: 1.6em;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+.navbar-header .navbar-brand:hover {
+    color: #fff;
+}
+
+#menu-glowne .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+}
+
+#menu-glowne .navbar-nav>li>a:hover {
+    color: #0ed8d6;
+}
+
+/* kolor menu nav po scrolowaniu strony */
+
+
+/* Nawigacja scroll */
+
+#main-nav.scroll {
+    background-color: #fff;
+}
+
+#main-nav.scroll ul .menu-item a {
+    color: #777777;
+    font-weight: 500;
+}
+
+#main-nav.scroll ul .menu-item a:hover {
+    color: #0ed8d6;
+}
+
+#main-nav.scroll .navbar-brand {
+    color: #333333;
+}
+
+
+/* Main header z obrazkiem */
+
+#main-header {
+    background-image: linear-gradient(rgba(82, 82, 122, 0.5), rgba(82, 82, 122, 0.5)), url(../img/header/pictures_on_the_wall.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: center;
+    position: relative;
+}
+
+/*Nagłowek z main header*/
+
+#main-header .header-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+}
+
+#main-header .header-caption h2 {
+    font-size: 2em;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Droid Serif', serif;
+}
+
+#main-header .header-caption h1 {
+    font-size: 4em;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style dla section Services */
+#services {
+    padding: 50px;
+}
+
+
+#services h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+#services h1 {
+    font-size: 15px;
+    font-family: 'Droid Serif', serif;
+    color: #333333;
+}
+#services .col{
+    padding: 20px;
+}
+
+#services h3 {
+font-family: 'Montserrat', sans-serif;
+font-size: 18px;
+font-weight: 700;
+}
+
+/* Kolor ikon + animacja */
+.fas {
+transition: 1s all; 
+border: 1px solid #0ed8d6;
+border-radius: 50%;
+background-color: #0ed8d6;
+}
+
+.fas:hover {
+transform:rotate(360deg);
+background-color: #fff;
+color: #0ed8d6;
+}
+
+.fa-stack-2x {
+color: #0ed8d6;
+}
+
+/* Style portfolio */
+#portfolio {
+    width: 100%;
+    height: 150vh;
+    background-color: rgb(227, 218, 218);
+}
+#portfolio .container .portfolio h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+#portfolio .container .portfolio h2 {
+    font-size: 15px;
+    font-family: 'Droid Serif', serif;
+    color: #333333;
+}
+/* Pierwszy rzad obrazkow */
+
+/*portfolio style start*/
+
+#portfolio {
+	background-color: #f7f7f7;
+    padding: 20px;
+}
+
+#portfolio h1 {
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
+    margin: 0;
+    padding: 15px;
+
+}
+#portfolio h3 {
+ font-family: 'Droid Serif', serif;
+margin: 0;
+    
+}
+
+.inner {
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+}
+
+#portfolio-item-1 {
+	background-size: cover;
+	background-image: url(..//img/portfolio/box_of_cookies.jpg);
+	transition: all 1s;
+}
+
+
+#portfolio-item-2 {
+	background-size: cover;
+	background-image: url(..//img/portfolio/chaotic_paint.jpg);
+	transition: all 1s;
+}
+
+#portfolio-item-3 {
+	background-size: cover;
+	background-image: url(..//img/portfolio/chestnut_on_bracket.jpg);
+	transition: all 1s;
+}
+
+#portfolio-item-4 {
+	background-size: cover;
+	background-image: url(..//img/portfolio/child_with_blue_paint.jpg);
+	transition: all 1s;
+}
+
+#portfolio-item-5 {
+	background-size: cover;
+	background-image: url(..//img/portfolio/house_with_blue_doors.jpg);
+	transition: all 1s;
+}
+
+#portfolio-item-6 {
+	background-size: cover;
+	background-image: url(..//img/portfolio/typing_on_laptop.jpg);
+	transition: all 1s;
+}
+
+
+.img-container .hov:hover {
+	transform: scale(1.2);
+   
+}
+
+.img-container {
+	height: 100%;
+}
+
+.img-container div{
+	height: 100%;
+}
+
+.portfolio-mask{
+	transition: all 1s;
+	background-color: rgba(14, 216, 214,0.85);
+	opacity: 0;
+}
+
+.portfolio-mask:hover {
+	opacity: 1;
+}
+
+
+#portfolio .fa {
+color: #fff;
+width: 100px;
+height: 100px;
+transform: translateY(100%);
+line-height: 100px;
+font-size: 4em;
+}
+
+.text-nag {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 5%;
+    padding: 10px;
+}
+
+/* Style do sekcji o NAS */
+#about{
+    padding: 20px;
+}
+#about .container .row .about-text1 {
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#about .container .row .about-text {
+font-family: 'Droid Serif', serif; 
+    font-size: 1.2em;
+}
+
+/* Style dla sekcji ABOUT */
+.face {
+    padding: 30px 0;
+}
+.face img {
+    max-height: 230px;
+}
+
+#about .text-about {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+#about .text-about1 {
+font-family: 'Droid Serif', serif;
+    font-size: 1.1em;
+}
+
+#about .icons {
+    padding: 20px;
+}
+
+
